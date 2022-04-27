@@ -1,0 +1,21 @@
+version: '3.8'
+services: 
+    assesment:
+        image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+        environment: 
+            ACCEPT_EULA: "Y"
+            SA_PASSWORD: "C0MP7ex5!!&*Pass"
+            MSSQL_PID: Express
+        ports: 
+            - "1433:1433"
+    assesmentapi:
+        build: .
+        depends_on: 
+            - assesment
+        environment: 
+            ServerName: "Assesment"
+            Database: "Adventure"
+            UserName: "SA"
+            Password: "C0MP7ex5!!&*Pass"
+        ports: 
+            - "80:80"

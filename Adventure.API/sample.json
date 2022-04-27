@@ -1,0 +1,59 @@
+{
+  "AdventureGame": {
+    "AdventureName": "DoughNut Decison Helper",
+    "Node": {
+      "label": "Yes",
+      "question": "Do I Want A DoughNut?",
+      "level": 1,
+      "children": [
+        {
+          "label": "Yes",
+          "question": "Do I Deserve It?",
+          "level": 2,
+          "children": [
+            {
+              "label": "Yes",
+              "question": "Are you sure?",
+              "level": 3,
+              "children": [
+                {
+                  "label": "Yes",
+                  "question": "Got it",
+                  "children": null
+                },
+                {
+                  "label": "No",
+                  "question": "Do Jumping Jacks first",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "label": "No",
+              "question": "Is it a good doughnut?",
+              "level": 3,
+              "children": [
+                {
+                  "label": "Yes",
+                  "question": "What are you waiting for? Grab it now",
+                  "children": null
+                },
+                {
+                  "label": "No",
+                  "question": "Wait till you find a sinful, Unforgettable doughnut?",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "No",
+          "question": "May be you want an apple?",
+          "level": 2,
+          "children": null
+        }
+      ]
+    }
+  }
+}
