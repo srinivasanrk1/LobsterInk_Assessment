@@ -5,8 +5,6 @@ Steps to run
 
 cd to folder and run docker compose build
 
-It will throw up error some time in efcore network for first time some times and then it will connect, Just wait for few mins.
-
 Added sample.json as default format for request, it is decision tree nested json. use this for post to adventure api.
 
 Since UI is not needed, I followed approach, 
