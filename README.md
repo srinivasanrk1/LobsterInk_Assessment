@@ -1,13 +1,13 @@
 # LobsterInk_Assessment
 
 
-Steps to run,
+Steps to run
 
 cd to folder and run docker compose build
 
 It will throw up error some time in efcore network for first time some times and then it will connect, Just wait for few mins.
 
-Addded sample.json as default format for request object decision tree nested json. use this for post to adventure api.
+Added sample.json as default format for request, it is decision tree nested json. use this for post to adventure api.
 
 Since UI is not needed, I followed approach, 
 
@@ -25,6 +25,9 @@ API => Adventure => StartGame => POST (AdventureId, UserId) => Result => Questio
 
                                        (User choice QuestionRouteId Get from above request, Until children null)
 API => Adventure => MoveToNextLevel => POST (QuestionRouteId, UserId)=> Result => AdventureId
+
+
+API =>Adventure => UserDecisions => GET (User,AdventureId) => Result will be nested json like decisions made by user
 
 
 
